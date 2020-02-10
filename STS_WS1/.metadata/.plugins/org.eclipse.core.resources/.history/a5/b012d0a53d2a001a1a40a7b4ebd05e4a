@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div ng-app="myApp" ng-controller="dashboardController">
+		<span>
+			<strong>Successfully logged In....</strong>
+		</span>
+	</div>
+	
+</body>
+</html>

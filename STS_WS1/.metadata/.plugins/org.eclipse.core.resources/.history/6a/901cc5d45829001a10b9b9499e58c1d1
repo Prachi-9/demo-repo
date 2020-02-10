@@ -1,0 +1,26 @@
+package com.example.dto;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class loginDto {
+	
+	@Id
+	private int loginId;
+	private String pass;
+	
+	public int getLoginId() {
+		return loginId;
+	}
+	public void setLoginId(int loginId) {
+		this.loginId = loginId;
+	}
+	public String getPass() {
+		return pass;
+	}
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+	
+}

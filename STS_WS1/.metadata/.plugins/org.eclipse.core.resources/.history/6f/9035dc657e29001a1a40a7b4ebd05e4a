@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  	<script src="controller/loginController.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- <form action="doLogin"> -->
+	<div ng-app="myApp" ng-controller="loginController" class="container" style="text-align: center;margin-top: 17%;margin-left: 33%;width: 37%;border: solid; padding: 10px;">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-lg-6" style="text-align: end  ;">
+				<span style="font: bold; font-size: 20px; font-weight: 800;">LOGIN ID </span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6" style="text-align: left;">
+				<input id="loginId" type="text" ng-model="loginId">
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-lg-6" style="text-align: end;">
+				<span style="font: bold; font-size: 20px; font-weight: 800;">PASSWORD </span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6" style="text-align: left;">
+				<input id="pass" class="column" type="text" ng-model="pass">
+			</div>
+		</div><br>
+		<div>
+			<button type="submit" class="btn btn-primary" ng-click="login()">LOG IN</button>
+		</div>
+	</div>
+	<!-- </form> -->
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+package com.example.sampleRest.dto;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "LOGINDTO")
+public class loginDto {
+	
+	@Id
+	@Column (name = "LOGINID")
+	private int loginId;
+	@Column (name = "PASS")
+	private String pass;
+	
+	public int getLoginId() {
+		return loginId;
+	}
+	public void setLoginId(int loginId) {
+		this.loginId = loginId;
+	}
+	public String getPass() {
+		return pass;
+	}
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+	
+}

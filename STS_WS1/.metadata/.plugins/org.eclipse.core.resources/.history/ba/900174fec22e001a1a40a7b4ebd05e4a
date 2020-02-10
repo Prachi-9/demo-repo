@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.js"></script>
+  	
+	<title>Insert title here</title>
+	
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+		
+		body {
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		/* Style the header */
+		header {
+		  background-color: #666;
+		  padding: 30px;
+		  text-align: center;
+		  font-size: 35px;
+		  color: white;
+		}
+		
+		/* Create two columns/boxes that floats next to each other */
+		nav {
+		  float: left;
+		  width: 30%;
+		  height: 300px; /* only for demonstration, should be removed */
+		  background: #ccc;
+		  padding: 20px;
+		}
+		
+		/* Style the list inside the menu */
+		nav ul {
+		  list-style-type: none;
+		  padding: 0;
+		}
+		
+		/* Style the footer */
+		footer {
+		  background-color: #777;
+		  padding: 10px;
+		  text-align: center;
+		  color: white;
+		}
+		
+		/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+		@media (max-width: 600px) {
+		  nav,{
+		    width: 100%;
+		    height: auto;
+		  }
+		}
+	</style>
+</head>
+<body ng-app="myApp">
+	<script src="controller/main.js"></script>
+  	<script src="controller/loginController.js"></script>
+  	<script src="controller/dashboardController.js"></script>
+	<!-- <form action="doLogin"> -->
+  		<div style="background: cadetblue;">
+  		<h2>Cities</h2>
+  		
+ 		 </div>
+	
+	<nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+	<div class="container" style="text-align: center;margin-top: 17%;margin-left: 33%;width: 37%;border: solid; padding: 10px;">
+		
+		<ul class="menu-list">
+        	<li><a href="#!login">LOGIN</a></li>
+    	</ul>
+		<!-- <div class="row">
+			<div class="col-sm-6 col-md-6 col-lg-6" style="text-align: end  ;">
+				<span style="font: bold; font-size: 20px; font-weight: 800;">LOGIN ID </span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6" style="text-align: left;">
+				<input type="text" ng-model="loginId">
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-lg-6" style="text-align: end;">
+				<span style="font: bold; font-size: 20px; font-weight: 800;">PASSWORD </span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6" style="text-align: left;">
+				<input class="column" type="text" ng-model="pass">
+			</div>
+		</div><br>
+		<div>
+			<button type="submit" class="btn btn-primary" ng-click="login()">LOG IN</button>
+		</div><br><br>
+		<span ng-show="loggedin">NOT AUTHORIZED</span> -->
+	</div>
+	<div ng-view></div>
+	<!-- </form> -->
+
+</body>
+</html>

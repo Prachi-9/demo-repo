@@ -1,0 +1,17 @@
+var app = angular.module('myApp', []);
+app.controller('loginController', function($scope, $http) {
+	
+	console.log("in js");
+	$scope.login = function(){
+		$http.post("/doLogin").then(function(data){
+			console.log(data);
+			if(data == 'SUUCCESS'){
+				$scope.loggedin = true;
+			}else{
+				$scope.loggedin = false;
+			}
+		});
+	};	
+	
+	
+});

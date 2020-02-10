@@ -1,0 +1,4 @@
+server.port=8181
+spring.h2.console.enabled=true
+spring.datasource.platform=h2
+spring.datasource.url=jdc:h2:mem:sampleRest

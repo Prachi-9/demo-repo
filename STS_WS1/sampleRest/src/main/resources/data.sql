@@ -1,0 +1,1 @@
+insert into logindto values(123,'123');

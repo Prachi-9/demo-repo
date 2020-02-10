@@ -1,0 +1,1 @@
+window.onpopstate = function (e) { window.history.forward(1); }

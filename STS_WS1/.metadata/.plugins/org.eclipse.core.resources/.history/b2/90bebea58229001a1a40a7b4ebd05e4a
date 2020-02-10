@@ -1,0 +1,23 @@
+var app = angular.module('myApp', []);
+app.controller('loginController', function($scope, $http) {
+	
+	console.log("in js");
+	$scope.login = function(){
+		$scope.param={
+				loginId: $scope.loginId,
+				pass: $scope.pass
+		};
+		$http.post("/doLogin",$scope.param).then(function mySuccess(response){
+			console.log(response.data);
+			if(response.data == 'SUCCESS'){
+				$scope.loggedin = true;
+			}else{
+				$scope.loggedin = false;
+			}
+		}, function myError(data){
+			console.log("some internal error");
+		});
+	};	
+	
+	
+});
